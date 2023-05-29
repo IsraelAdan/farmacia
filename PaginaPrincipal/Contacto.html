@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="Innova Team">
+    <!--ALEXIS/LILIANA AGREGAR ESTE LINK PARA LOS ICONOS-->
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <link rel="stylesheet" href="../css/todos.css">
+
+   <title>FARMACIA LÍBANO</title>
+</head>
+
+<body>
+    <!-- Encabezado de la interfaz principal -->
+    <header class="encabezado">
+        <img src="../Imagenes_index/LOGO_Farmacia.png">
+        <h1>FARMACIA LÍBANO</h1>
+        <div class="borraelemento"></div>
+        <nav> <!-- Barra de navegacion -->
+            
+            <a href="../PaginaPrincipal/index.html">Inicio</a>
+            <a href="../PaginaPrincipal/Salud.html">Salud</a>
+            <a href="../PaginaPrincipal/Derma.html">Dermatología</a>
+            <a href="../PaginaPrincipal/Saludsex.html">Salud Sexual</a>
+            <a href="../PaginaPrincipal/Bebes.html">Bebés</a>
+            <a  id="iniciar"  href="../PaginaPrincipal/iniciar_sesion.html">Iniciar Sesión</a>
+            <!--ALEXIS/LILIANA-->
+            <div class="buscar">
+                <input type="text" placeholder="Buscar" required>
+                    <div class="boton">
+                        <i class='bx bx-search'></i>
+                    </div>
+                </input>
+            </div>
+            
+        </nav>
+    </header>
+    <!-- Imagen principar del contenido -->
+
+    <h1 class="frase">Formulario de Ayuda y Soporte</h1>
+
+    <div id="hr"></div>
+    <div class="ferm">
+        <form action="../PaginaPrincipal/index.html" method="POST">
+            <label for="nombre">*Nombre:</label>
+            <input type="text" placeholder="Escriba su nombre" id="nm" name="nombre" required>
+            <label for="Apellido">*Apellido: </label>
+            <input type="text" placeholder="Escriba sus apellidos" id="app" name="apellido" required>
+
+            <label for="Teléfono">*Teléfono</label>
+            <input type="number" placeholder="Introduzca su numero de Teléfono" id="cel" name="Teléfono" required>
+
+            <label for="correo">*Correo electrónico</label>
+            <input type="email" placeholder="Introduzca su correo electrónico" id="eml" name="correo" required>
+
+            <label for="Preferencia">*Preferencia de comunicación: </label>
+            <select id="Preferencia" name="Preferencia" title="Preferencia de comunicación" class="form-control init">
+                <option disabled="" selected="" hidden="">Elija su preferencia de comunicación</option>
+                <option value="">--Ninguno--</option>
+                <option value="Email">Email</option>
+                <option value="Teléfono">Teléfono</option>
+
+                <label for="mensaje">*Mensaje:</label>
+                <textarea id="mensaj" name="mensaje" placeholder="Describa brevemente su comentario"
+                    required></textarea>
+
+                <input type="submit" value="Enviar">
+
+        </form>
+    </div>
+
+    <div class="redes">
+        <div class="iconos">
+            <a href="https://www.facebook.com/profile.php?id=100093114099234" class="bx bxl-facebook-circle">
+                <span id="nombre">Facebook</span>
+            </a>
+            <a href="https://instagram.com/itzel_lbc?igshid=MzRlODBiNWFlZA==" class="bx bxl-instagram-alt">
+                <span id="nombre">Instagram</span>
+            </a>
+            <a href="https://twitter.com/FarmaciaLibano" class="bx bxl-twitter">
+                <span id="nombre">Twitter</span>
+            </a>
+        </div>
+    </div>
+
+    <footer class="pie-pagina">
+        <div class="contenedor footer-content">
+            <div class="encabezado">
+                <img src="../Imagenes_index/LOGO_Farmacia.png" alt="Farmcia Libano">
+                </div>
+        <div class="contact-us">
+        <h2 class="brand">Farmacia Líbano</h2>
+        <p>Sur 21 s/n Mz.10 Lt92 <br> Leyes de reforma 1a. Seccion <br> C.P. 09310, Iztapalapa</p>
+        <p> Telefono: 55 9238 0621 <br></p>
+        </div>
+        <div class="contact-us">
+        <p>&#0169; Alexis Garcia Mendoza<br></p>
+        <p>&#0169; Israel Adan Perez Sandoval<br></p>
+        <p>&#0169; Liliana Itzel Brigido Cerqueda<br></p>
+        <p>&#0169; Roberto Pozos Fragoso<br></p>
+        </div>
+        <div class="social-media">
+        <p>Encuentranos en: </p>
+        <a href="Mision.html" class="social-media-icon">
+        <img src="../Imagenes_Salud/user-solid-24.png" alt=""> <br><br> Misión
+        </a>
+        <a href="Contacto.html" class="social-media-icon">
+        <img src="../Imagenes_Salud/chat-solid-24.png" alt=""> <br><br> Comentario
+        </a>
+        <a href="../PaginaPrincipal/Quienes_somos.html" class="social-media-icon">
+        <img src="../Imagenes_Salud/group-solid-24.png" alt=""> <br><br> Nosotros
+        </a>
+        </div>
+        <div class="line"></div>
+        </footer>
+        
+
+</body>
+
+</html>

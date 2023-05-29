@@ -1,0 +1,885 @@
+/* Estilos para paginas principalesS */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: lato;
+}
+
+
+/*Estilos para descripcion de compras */
+div.galeria1{
+    margin: 10px 20px;/*separacion*/
+    box-shadow: 0 5px 10px 0 black, 0 6px 20px 0 rgba(0,0,0,0.19);
+    float: left;
+    width: 300px;
+
+}
+div.galeria1 img{
+    width: 100%;
+    height: auto;
+}
+div.galeria1:hover{
+    border: 10px solid #669ed0;
+}
+
+div.pie1{
+    text-align: center;
+    padding: 15px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+
+
+
+/*after: agrega texto imaginario */
+.borraelemento:after{
+
+    content: "";
+    display: table;/*Replica de una tabla pero sin la tabla*/
+    clear: both;/*Hace que la clase display table, se situe al final del ultimo elemento 
+    y al inicio del nuevo*/
+
+}
+
+.tren {
+	width: 1000px;/*Tamaño de las imagenes del tren*/
+    height: auto;/*Altura del elemento*/
+	margin:50px auto 0; /*Primero donde se posiciona de arrib hacia abajo(50px)
+                          Donde se posiciona de dereecha a izquierda(0)*/
+	overflow: hidden;/*Todas las imagenes de posicionan debajo de la misma*/
+}
+
+.tren ul {
+	display: flex;/*Las imagenes no se disparan a lo largo y ancho */
+	padding: 0;/*espacio entre el contenido y el borde del elemento*/
+	width: 400%;/*Tamaño de las imagenes*/
+	animation: slide 15s infinite alternate ease-in-out; /*Animacion tren(slide) con segundos e infinito */
+}
+
+.tren li {
+	width: 100%;/*Tamaño de la imagen*/
+	list-style: none;/*Valor de las imagenes, todas son iguales todas hacen lo mismo*/
+}
+
+.tren img {
+	width: 100%;/*tamaño del tren*/
+}
+
+@keyframes slide {/*keyframes = controla secuencia de un slide(tren)  nuestro gusto*/
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}/*tiempo de imagen al deslizarce de ida (20%)*/
+    
+	25% {margin-left: -100%;}/*tiempo de imagen al deslizarce de regreso (-100%)*/
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+
+
+.encabezado{ 
+
+    width: 100%;
+    height: auto;
+
+}
+.encabezado img{
+    width: 16%;
+    float: left;
+
+
+}
+.encabezado h1{
+
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3vw;/* viewport = 1 vw ocupa el 1% del tamaño del navegador */
+    color:rgb(43, 96, 194) ;
+    text-align: center;
+    padding: 6%/*Lo largo de la parte superior a la letra y de la letra al navegador*/ 4%;/*Se hace hacia la izquierda aprtir del centro*/
+    letter-spacing: 3px;/*Separacion de cada letra*/
+}
+
+
+.encabezado nav{
+    max-width: 100%; /* El espacio que ocupa la barra de navegacion*/
+   overflow: hidden;/* overflow, Controla lo que sucede cuando el contenido es demasiado grande */
+   background-color: #669ed0;
+
+}
+.encabezado a { 
+
+    font-size: 1.5vw;/*El tamaño de la letra en la barra de navegacion*/
+    font-family:'Times New Roman', Times, serif;
+    padding:30px/*Espacio de arriba hacia abajo*/ 50px ;/*Espacio entre cada apartado del navegador*/
+    color: aliceblue;
+    float: left;/*La barra de navegacion empiece desde la izquierda*/
+    text-decoration: none;/*No se le agregara linea debajo de las letras*/
+}
+
+.encabezado a:hover{
+    background-color: #96e77b; /*Hover = cuando el usuario interactua con las letras se marcan verde*/
+}
+
+.frase{
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 0 0 3px #89de71;/*Color de la sombra del texto*/
+    text-align: center;
+    font-size: 2rem;/*Tamaño de la letra*/
+    padding-top: 50px; /*Donde se ajustara de arriba para abajo */
+}
+
+div.galeria{
+    margin: 10px 20px;/*Espacio de largo(10px) Espacio de largo 20px*/
+    box-shadow: 0 5px 10px 0 black, 0 6px 20px 0 rgba(0,0,0,0.19);
+    /*Sombra de los campos de text e imagen*/
+    float: left;/*Posicion de imagenes izquierda*/
+    width: 250px;/*Tamaño de los rectangulos de imagen y texto*/
+}
+div.galeria img{
+    width: 100%;/*Tamaño de las imagenes*/
+    height: auto;/*Altura del elemento dependiendo del tamaño del rectangulo*/
+    
+}
+div.galeria:hover{
+    border: 10px solid #669ed0;/*hover = Cuando el usuario intectua se pone borde azul*/
+}
+div.pie{
+    text-align: center; /*Texto centrado*/
+    padding: 10px;/*Largo del rectangulo*/
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+
+
+.pie-pagina{
+    border:2px solid #000;/*Borde del pie de pagina*/
+    width: 99.7%;/*Largo del pie de pagina*/
+    height:180px;/*Ancho del pie de pagina*/
+    float: left;/*Empieza desde la izq*/
+    text-align: center;/*Texto centrado*/
+    letter-spacing: 1.5px;/*Espacio entre cada letra*/
+    overflow: hidden;/*Para que alla un fin en la pagina*/
+    background-color:#4a7fe0;/*Color de fondo*/
+    margin-top: 40px;/*Espacio entre articulos y el pie de pagina*/
+}
+
+ 
+
+.contact-us{
+    color: #ffffff;
+    display: inline-block;/*Establece ya un ancho y largo entre cada cosa del pie de pagina*/
+    text-align: left;/*El pie de pagina empieza desde la izq*/
+    margin-right: 100px;/*Establece medida de un elemento del pie de pagina*/
+    font-family: lato;
+    font-size: 18px;/*Tamaño de letra*/
+    margin-top: 15px;/*Tamaño de arriba a abajo del pie de pagina*/
+}
+
+ 
+
+.brand{
+    font-weight: 500;/*Grosor de la letra*/
+    font-size: 30px;/*Tamaño de la letra*/
+}
+
+ 
+
+.brand p{
+    font-weight: 200;/*Grosor de la letra*/
+    font-size: 20px;/*Tamaño de la letra*/
+}
+
+ 
+
+.social-media{
+    width: 30%;/*Divide todo el pie de pagina*/
+    display: inline;/*Elemetos que continuan en la misma linea*/
+    float: right;/*Empieza desde la derecha los iconos*/
+    margin-left: -15%;/*Margen de cada apartado del pie de pagina desde la izq*/
+    margin-top: 15px;/*De arriba a abajo los iconos */
+    margin-right: 5%;/*Lo desplaza a la derecha para centrarlo*/
+}
+
+ 
+
+.social-media p{
+    /*Texto arriba de los iconos*/
+    color: #fff;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+ 
+
+.social-media-icon{
+    display: inline-block;/*Hace circular los iconos*/
+    margin-left: 30px;/*Separacion de cada icono*/
+    width: 60px;/*Los circulos de hacen anchos*/
+    height: 60px;/*Los circulos de hacen largos*/
+    border: 2px solid #ffffff;/*Ancho del margen de iconos*/
+    border-radius: 50%;/*Los hace circulares*/
+    text-align: center;/*Texto debajo de iconos centrado*/
+    color: #ffffff;
+    text-decoration: none;/*No se pondran lineas debajo de texto*/
+}
+
+ 
+
+.social-media-icon:hover{
+    background: #1a97fd;/*Color de fondo del icono*/
+    color: #cfc7f8;/*Color del icono*/   
+}
+
+ 
+
+.social-media-icon img{
+    width: 40px;/*tamaño del icono*/
+    margin-top: 5px;/*Hubicacion del icono y texto de arriba abajo*/
+
+ 
+
+}
+
+ 
+
+.line{
+    /*Linea final de pie de pagina*/
+    width: 90%;/*Largo de la linea*/
+    margin: 0 auto;
+    height: 2px;/*Ancho de una linea*/
+    background: #ffffff; /*Color de la linea*/
+    margin-top: 20px;/*Ajustar linea de arriba a abajo */
+}
+
+
+
+
+
+
+
+/* Estilos para el formulario iniciar sesion */
+.sesion{
+
+    background-color: rgb(255, 255, 255);/*Color de fondo iniciar*/
+}
+
+
+
+.encabezadosesion h1{
+    /*Titulo de farmacia*/
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vw;
+    color: rgb(74, 127, 224);
+    text-align: center;
+    letter-spacing: 3px;
+    padding: 3% 5%;
+}
+
+.formulario{
+
+    width: 80%;/*Tamaño de todo el formulario*/
+    margin: 3% auto 3%; /*largo antes y despues del formulario*/
+
+}
+.formulario form{
+       
+    width: 70%;
+    margin: 2% auto;
+    background-color: rgb(241, 241, 129);
+    text-align: center;
+    border-radius: 10px;
+    padding: 2% 6%;
+
+}
+.formulario input{
+
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+    text-align: center;
+    padding: 3%;
+    border-radius: 2.5px;
+    border: solid;
+    border-style: outset;
+    
+}
+.formulario input:hover{
+    border: 5px solid rgb(240, 187, 52);
+}
+
+.formulario #aceptar{
+
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2pw;
+    border: none;
+    border-radius: 4.5px;
+    background-color:rgb(248, 248, 213); ;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+
+.formulario #aceptar:hover{
+    color: aliceblue;
+    background-color: rgb(197, 204, 98);
+
+
+    }
+
+    .formulario h2{
+
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5vw;
+        color: rgb(74, 127, 224);
+
+    }
+    .formulario hr{
+
+        margin-top: 2%;
+        margin-bottom: 10%;
+
+    }
+    .formulario h3{
+
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 20px;
+
+    }
+
+.contenedor{
+
+   width: 100%;
+   height: 500px;
+
+}
+#cerrar{
+  
+    float: right;
+}
+
+
+#nombre{
+
+    float: right;/*Texto de nombre usuario a la derecha abajo de foto*/
+    text-align: center;
+   
+}
+
+/*Estilos para el perfil*/
+
+.contenedor{
+
+    width: 100%;
+    height: 500px;
+ 
+ }
+ #cerrar{
+   
+     float: right;
+ }
+ 
+ #usuario{
+ 
+     float: right;
+     height: 100px;
+     width: 100px;
+     background-repeat: no-repeat;
+     background-position: 50%;
+     border-radius: 50%;
+     background-size: 100% auto;
+     vertical-align: text-bottom; 
+ 
+ 
+ }
+ #nombre{
+ 
+     float: right;
+     text-align: center;
+    
+ }
+/*Estilos para registrarse*/
+
+.preguntas{
+
+    background-color: rgb(255, 255, 255); /*Fondo de la pagina*/
+}
+
+.encabezadosesion{
+
+    width: 100%;
+    height: auto;
+
+
+}
+
+.encabezadosesion img{
+
+    width: 10%;
+    float: left;
+    margin-bottom: 2%;
+
+
+}
+
+/* Estilo para el formulario */
+.fromregis2 {
+    width: 50%;/*Ancho del formulario*/
+    margin: 0 auto; /*CENTRA EL FORMULARIO*/
+    background-color:  rgb(241, 241, 129);
+    padding: 30px;/*Espacio del fondo del formularip*/
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Estilo para las etiquetas de los campos */
+  .campo {
+    display: inline-block;/*Ancho y alto del elemento*/
+    width: 50%;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo para los campos de entrada */
+  .campo2[type="text"], input[type="email"], input[type="password"], textarea {
+    width: 100%; /*Lo largo de cada campo de texto*/
+    padding: 10px;/*Largo de cada campo de texto*/
+    border: 1px solid #ccc;/*Borde de cada campo de texto*/
+    border-radius: 4px;/*Las puntas las hace redondas*/
+    box-sizing: border-box;/*permite incluir el relleno y el borde en el ancho y 
+                           alto total de la caja de texto*/
+    margin-bottom: 20px;/*Ancho por fuera de cada cuadro de texto*/
+    font-size: 16px;/*Ancho por dentro de cada caja de texto*/
+  }
+  
+  /* Estilo para el botón de envío */
+  .campo2[type="submit"] {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2pw;
+    border: none;
+    border-radius: 4.5px;
+    background-color:rgb(248, 248, 213); ;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  .campo2[type="submit"]:hover {
+    color: aliceblue;
+    background-color: rgb(197, 204, 98);
+
+
+    }
+
+  /* Estilo para el botón de envío cuando se coloca el cursor sobre él */
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+
+
+
+
+  
+ /* PARTE ISRAEL */
+.inicio_somos{
+    margin: 70px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align:left;
+    font-size: 20px;
+    padding-top: 10px;
+    
+}
+.inicio_somos img{
+    margin-top: 15px;
+    float: right;
+    text-align: right;
+}
+  
+.quienessomos img{
+    width:200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+.quienessomos{
+    display: flex;
+    margin: 60px;
+    
+}
+.selecciones{
+    display: flex;
+    align-items: center;
+    padding: 40px;
+}
+
+/* Estilos para Mision y Vision */
+/* Estilos para Mision y Vision */
+/* Estilos para Mision y Vision */
+/* Estilos para Mision y Vision */
+/* Estilos para Mision y Vision */
+/* Estilos para Mision y Vision */
+/* Estilos para Mision y Vision */
+
+
+/* Estilos para Mision y Vision */
+#tit{
+    text-align: center;
+}
+#sp{
+    font-size: 40px;/*Tamaño del subtitulo*/
+    text-align: center;
+}
+#mis{
+    float: left;/*Texto a la izq*/
+    margin: 3%;
+}
+
+ 
+
+#vis{
+    float:right;/*Texto a la derecha*/
+    margin: 3%;
+}
+
+ 
+
+#JH{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;/*Tamaño de letra*/
+}
+
+
+ 
+
+/* Formulario de Ayuda */
+
+ 
+
+#hr {
+    margin-top: 20px;/*Espacio de la frase al formulario*/
+    margin-bottom: 20px;/*Espacio de la frase al formulario*/
+    border: 0;
+    border-top: 2px solid #999999;/*Linea del formulario de ayuda y soporte*/
+}
+
+  h1#tit{
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 0 0 3px #89de71;
+    font-size: 2rem;
+    padding-top: 50px;
+  }
+
+  form {
+    background-color: #ffffff;
+    margin: 3%;
+  }
+
+  label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+  }
+
+  input[type="text"] {
+    font-size: 16px;
+    width: 100%;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+ 
+
+  select#Preferencia{
+    font-size: 16px;
+    width: 100%;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: left;
+  }
+
+ 
+
+  input[type="number"] { 
+    font-size: 16px;
+    width: 100%;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+ 
+
+  input[type="email"] {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+ 
+
+  #mensaj {
+    width: 100%;
+    padding: 35px 5px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 20px;
+  }
+
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    position: right;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+ 
+
+  .ferm{
+    width: 100%;/*Tamaño del formulario completo*/
+}
+.ferm form{
+
+    width: 70%;
+    margin: 2% auto;
+    background-color: rgb(74, 127, 224);
+    text-align: center;
+    border-radius: 10px;
+    padding: 2% 5%;
+
+ 
+
+}
+
+ 
+
+
+
+
+
+
+
+.ferm input:hover{
+    border: 5px solid rgb(112, 112, 112);
+}
+.ferm input:hover{
+    border: 5px solid rgb(112, 112, 112);
+}
+
+
+/*ESTILOS ALEXIS Y LILIANA*/
+
+  /*estilo para el buscador y el boton*/
+  .buscar{
+    position: absolute;/*posicion elementos de manera absoluta*/
+    padding: 5px;/*Donde se escribe se pociciona abajo del buscador*/
+    right: 100px;/*El lugar donde esta*/
+    padding-top: 25px;/*Donde se escribe se pociciona abajo del buscador*/ 
+  }
+
+  .buscar input{
+    width: 0px;/*El circulito debajo de el icono buscar(tamaño) */
+    height: 40px;/*Largo del circulito debajo*/
+    padding: 0 20px;/*ancho del circulito debajo*/
+    font-size: 18px;/*Tamaño de letra*/
+    color: #000;/*color de letra*/
+    outline: none;/*No se ve el contorno de el jtf*/
+    border: 1px solid #96e77b;/*Tamaño del contorno del ftf y su color del contorno*/
+    border-radius: 30px;/*redondea el cuadro de texto*/
+    transition: all 0.6s ease;/*velocidad de la transicion lento/rapido/lento*/
+  }
+
+  .boton{
+    position: absolute;/*posicion elementos de manera absoluta*/
+    top: 18px;/*Pociciona el elemento de texto*/
+    right: 0;/*Se pocisiona mas a la derecha*/
+    background:#1376cc;
+    width: 55px;/*Tamaño del circulo debajo del icono a lo ancho*/
+    height: 55px;/*Tamaño del circulo debajo del icono a lo largo*/
+    line-height: 67px;/*Posicion del icono*/
+    text-align: center;/*Se pocisiona el icono al centro*/
+    font-size: 30px;/*Tamaño de icono*/
+    border-radius: 50%;/*Se hace circular*/
+    cursor: pointer;/*Animacion de buscar(manita del curson)*/
+
+  }
+
+  .buscar:hover input{
+    width: 240px;/*Lo largo que se pondra el cuadro de texto */
+  }
+
+  .buscar input:focus{
+    width: 240px;/*Cuando se escribe y el mause lo movemos no se mete la caja de texto*/
+  }
+
+/*imagen de fondo*/
+.fondofarm{
+    height: 50vw;/*Lo que se vera de la imagen de fondo*/
+    background-image: linear-gradient(to right, #00f2617e, hsla(210, 96%, 46%, 0.49)100%), url(../Imagenes_index/Fondo.jpeg);
+    /*linear-gradient crea colores en una imagen de linea recta 
+    en este caso 50% verde izq y 50% azul derecha*/
+    background-repeat: no-repeat;/*No se repiten los fondons del contenido*/
+    background-size: cover;/*Cubre la imagen con un tamaño*/
+    background-attachment: fixed;/*La imagen se quede fija de fondo y no se mueva*/
+    background-position: center;/*La imagen se centra*/
+}
+
+.fondofarm h2{
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 0 0 3px #89de71;/*Sombra al texto azul*/
+    text-align: center;/*Texto centralizado*/
+    font-size: 2rem;/*Tamaño del texto*/
+    padding-top: 60px;/*Se pone el texto del tamaño especificado de arriba para abajo*/
+    color: white;/*Color de las letras*/
+    
+}
+/*estilos Redes solciales*/
+
+.redes{
+    width: 100%;
+    max-width: 55px;
+    position: fixed;
+    right: -10px;
+    top: 40%;
+}
+
+.redes a{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+    position: relative;
+    transition: all 500ms ease;
+    color: #fff;
+}
+
+.redes a:hover{
+    background: #1c1c1c;
+}
+
+.redes .bxl-facebook-circle{
+    background: #3b5998;
+    border-radius: 5px 0px 0px 0px;
+}
+
+.redes .bxl-instagram-alt{
+    background: #eb35b7;
+    border-radius: 0px 0px 0px 0px;
+}
+
+.redes .bxl-twitter{
+    background: #00acee;
+    border-radius: 0px 0px 0px 5px;
+}
+
+
+
+.redes #nombre{
+    position: fixed;
+    background: #1c1c1c;
+    padding: 6px;
+    border-radius: 3px;
+    font-size: 15px;
+    margin-top: -4px;
+    transition: all 500ms ease;
+    right: 70px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.redes a:hover #nombre{
+    opacity: 1;
+    visibility: visible;
+    
+}
+.redes #nombre::after{
+    position: absolute;
+    content: '';
+    border-left: 7px solid #1c1c1c;
+    border-right: 7px solid transparent;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    left: 100%;
+    top: 8px;
+}
+.subtitulo{
+    text-align: center;
+    font-weight: 300;
+    color: #13547a;
+    margin-bottom: 40px;
+    font-size: 40px;
+
+}
+.contenedor-servicio{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contenedor-servicio img{
+    width: 35%;
+    border: 2px solid #1a97fd;
+}
+.checklist-servicio{
+    width: 40%;
+}
+.service{
+    margin-bottom: 20px;
+}
+
+.n-service{
+    margin-bottom: 7px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    text-align: center;
+}
+#row{
+    font-size: 20px;
+    text-align: justify;
+}
+.rauw{
+    width: 105%;
+}
+.img-responsive{
+    height: auto;
+    border-radius: 50%;
+}
+#tor{
+    text-align: center;
+}
